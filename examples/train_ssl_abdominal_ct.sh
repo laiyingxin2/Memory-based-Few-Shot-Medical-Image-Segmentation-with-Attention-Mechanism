@@ -2,7 +2,7 @@
 # train a model to segment abdominal CT 
 GPUID1=0
 export CUDA_VISIBLE_DEVICES=$GPUID1
-
+ 
 ####### Shared configs ######
 PROTO_GRID=8 # using 32 / 8 = 4, 4-by-4 prototype pooling window during training
 CPT="myexp"
