@@ -124,4 +124,4 @@ def add_observer(config, command_name, logger):
     exp_name = f'{ex.path}_{config["exp_str"]}'
     observer = FileStorageObserver.create(os.path.join(config['path']['log_dir'], exp_name))
     ex.observers.append(observer)
-    return config
+    return config 
