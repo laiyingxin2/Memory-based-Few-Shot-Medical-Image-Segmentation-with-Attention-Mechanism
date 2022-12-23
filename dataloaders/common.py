@@ -4,7 +4,7 @@ Extended from vanilla PANet code by Wang et al.
 """
 import random
 import torch
-
+import matplotlib.pyplot as plt
 from torch.utils.data import Dataset
 
 class BaseDataset(Dataset):
