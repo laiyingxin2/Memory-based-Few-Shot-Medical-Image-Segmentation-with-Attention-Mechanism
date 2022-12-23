@@ -83,6 +83,7 @@ def main(_run, _config, _log):
         superpix_scale = _config["superpix_scale"],
         fix_length = _config["max_iters_per_load"] if (data_name == 'C0_Superpix') or (data_name == 'CHAOST2_Superpix') else None
     )
+    print(1)
 
     ### dataloaders
     trainloader = DataLoader(
