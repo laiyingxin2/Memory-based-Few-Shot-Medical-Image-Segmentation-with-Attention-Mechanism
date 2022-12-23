@@ -206,6 +206,7 @@ def main(_run, _config, _log):
     m_classPrec,_, m_meanPrec,_,  m_classRec,_, m_meanRec,_, m_rawPrec, m_rawRec = mar_val_metric_node.get_mPrecRecall(labels=sorted(test_labels), n_scan=None, give_raw = True)
 
     mar_val_metric_node.reset() # reset this calculation node
+  
 
     # write validation result to log file
     _run.log_scalar('mar_val_batches_classDice', m_classDice.tolist())
